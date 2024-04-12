@@ -1,0 +1,153 @@
+.book-container .book-box {
+    display: grid;
+    grid-template-columns: auto 1.25fr;
+    width: auto;
+    height: 16.125rem;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.book-container .book-box .book-front-page {
+    position: relative;
+    display: inline-block;
+}
+
+
+.book-container .book-box .book-front-page .read-now-container {
+    position: absolute;
+    top: -2%;
+    right: -8%;
+    transform: translate(-8%, -12%);
+}
+
+
+.book-container .book-box .book-front-page .read-now-container {
+    width: 3rem;
+    height: 3rem;
+    background: black;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #EDB264;
+    cursor: pointer;
+}
+
+.book-container .book-box .book-front-page img {
+    width: 162px;
+    height: 258px;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+.book-container .book-box .book-front-page:hover img {
+    transform: scale(1.1); /* Scale the image to 1.1 times its original size on hover */
+    transition: transform 0.3s ease; /* Add transition effect */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a box-shadow for highlighting */
+}
+
+.book-container .book-box .book-info {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    max-height: 16rem;
+}
+
+.book-container .book-box .book-info .book-labels {
+    display: grid;
+    grid-template-rows: max-content auto;
+}
+
+.book-container .book-box .book-info .book-labels .title {
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.book-container .book-box .book-info .book-labels .author {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.63);
+    padding-top: 0.3rem;
+}
+
+.book-container .book-box .book-info .book-prices {
+    display: grid;
+}
+
+.book-container .book-box .book-info .book-prices .price {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+}
+
+.book-container .book-box .book-info .book-prices .original-price {
+    color: #FF0000;
+    text-decoration: line-through;
+    padding-top: 1rem;
+}
+
+.book-container .book-box .book-info .book-prices .discounted-price {
+    color: #000000;
+}
+
+
+.book-container .book-box .book-info .add-to-cart .add-to-cart-button {
+    box-sizing: border-box;
+    /*position: absolute;*/
+    height: 39px;
+    background: #EDB264;
+    border: 1.5px solid #EDB264;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.book-container .book-box .book-info .add-to-cart .add-to-cart-button:hover {
+    background: #FFD699; /* Change background color on hover */
+    border-color: #FFD699; /* Change border color on hover */
+}
+
+.book-container .book-box .book-info .add-to-cart .add-to-cart-button .cart-icon {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.25rem;
+    padding-left: 1.5rem;
+    cursor: pointer;
+}
+
+.book-container .book-box .book-info .add-to-cart {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.book-container .book-box .book-info .add-to-cart .add-to-cart-text {
+    width: 120px;
+    height: 31px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #1C0461;
+    justify-content: start;
+    padding-left: 0.5rem;
+    cursor: pointer;
+}

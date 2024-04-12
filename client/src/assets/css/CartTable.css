@@ -1,0 +1,243 @@
+
+.cart-table {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr 0.5fr 0.5fr;
+    row-gap: 1em;
+    /*width: -moz-fit-content;*/
+    margin: 0 auto;
+    background-color: aliceblue;
+    padding: 1rem 12rem;
+}
+
+ul {
+    display: contents;
+}
+
+ul > li {
+    display: contents;
+}
+
+.table-heading {
+    background-color: #333;
+    color: white;
+}
+
+.table-heading > * {
+    background-color: #EDF4F8;
+    padding: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #1C0461;
+
+}
+
+.heading-book {
+    grid-column: 1 / 3;
+    padding-left: 6.8rem;
+
+}
+
+.heading-price {
+    grid-column: 3;
+    text-align: right;
+}
+
+.heading-quantity{
+    text-align: center;
+}
+
+.heading-subtotal {
+    text-align: right;
+    grid-column: -2 / -1;
+}
+
+.cart-book-image {
+    padding: 0 1em;
+}
+
+.cart-book-image > * {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.cart2 img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.rect {
+    background-color: var(--primary-color-dark);
+}
+
+.narrow-rect {
+    width: 75px;
+    height: 100px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.wide-rect {
+    width: 125px;
+    height: 100px;
+}
+
+.cart-book-price {
+    padding-left: 1em;
+    text-align: right;
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+}
+
+.cart-book-quantity {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+
+}
+
+.cart-book-subtotal {
+    text-align: right;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-align: right;
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+}
+
+/* Row separators in the table */
+
+.line-sep {
+    display: block;
+    height: 2px;
+    background-color: gray;
+    grid-column: 1 / -1;
+}
+
+/* Increment/decrement buttons */
+
+.icon-button {
+    border: none;
+    cursor: pointer;
+}
+
+.inc-button {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    margin-right: 0.25em;
+}
+
+.inc-button:hover {
+    color: var(--primary-color-dark);
+}
+
+.dec-button {
+    font-size: 1.125rem;
+    color: #ccc;
+}
+
+.dec-button:hover {
+    color: #aaa;
+}
+
+/* Chevron buttons */
+
+.dec-arrow-button,
+.inc-arrow-button {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.dec-arrow-button:hover,
+.inc-arrow-button:hover {
+    color: var(--primary-color-dark);
+}
+
+input[type="number"] {
+    width: 4em;
+}
+
+select {
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color-dark);
+    border-radius: 3px;
+}
+.row-line {
+    border-bottom: 1px solid black;
+}
+
+.cart-book-title {
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.cart-count {
+    height: 81px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+.continue-shopping-button,.proceed-to-checkout-button{
+    box-sizing: border-box;
+    width: 11.938rem;
+    height: 2.666rem;
+    background: #EDB264;
+    border: 1.5px solid #EDB264;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.continue-shopping-text,.proceed-to-checkout-text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #1C0461;
+    cursor:pointer;
+}
+
+.continue-shopping-button:hover,.proceed-to-checkout-button:hover {
+    background: #FFD699;
+    border: 1.5px solid #FFD699;
+}
+
+.cart-call-to-action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24rem;
+}

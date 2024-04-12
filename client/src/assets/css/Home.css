@@ -1,0 +1,236 @@
+.home-page {
+    display: grid;
+    background: #D6F3FF;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1.75fr 1fr;
+    gap: 1em;
+    min-height: 84.4vh;
+}
+
+.hero-image img{
+    height: 25rem !important;
+}
+
+.welcome-text-container{
+    padding-left: 10rem;
+    padding-top: 4rem;
+}
+
+.welcome-text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: #1C0461;
+}
+
+.description{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: #1C0461;
+    padding-top: 1.3rem;
+}
+
+.explore-now {
+    padding-top: 3rem;
+}
+
+.explore-now-button{
+    box-sizing: border-box;
+    width: 11.938rem;
+    height: 2.666rem;
+    background: #EDB264;
+    border: 1.5px solid #EDB264;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.explore-now-text{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #1C0461;
+    cursor:pointer;
+}
+
+.explore-now-button:hover {
+    background: #FFD699;
+    border: 1.5px solid #FFD699;
+}
+
+
+.hidden-gem{
+    padding-left: 10rem;
+    padding-bottom: 2rem;
+    margin-top: -3rem;
+    padding-right: 5rem;
+}
+
+.hidden-gem-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /*height: 17.7rem;*/
+    background: #FDFEFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.3rem;
+    width: auto;
+}
+
+.hidden-gem-image {
+    display: flex;
+    justify-content: end;
+}
+
+.hidden-gem-image img{
+    width: 14rem;
+    /*height: 17.7rem;*/
+    border-radius: 0px 0.3rem 0.3rem 0px;
+
+}
+
+.hidden-gem-text .title{
+    font-family: 'Love Ya Like A Sister';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 25px;
+    display: flex;
+    letter-spacing: 0.2px;
+    color: #1B76AA;
+    padding-top: 0.8rem;
+    padding-left: 1.5rem;
+}
+
+.hidden-gem-text .book-info{
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.hidden-gem-text .book-info .book-title{
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #000000;
+    padding-top: 0.6rem;
+}
+
+.hidden-gem-text .book-info .author{
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: rgba(0, 0, 0, 0.63);
+    padding-top: 0.2rem;
+}
+
+.hidden-gem-text .book-info .description{
+    font-family: 'Patrick Hand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: rgba(0, 0, 0, 0.74);
+    padding-bottom: 4rem;
+}
+
+.client-testimonials-container{
+    height: 19.8rem;
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 10px;
+    margin-top: -3rem;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1.5fr 0.5fr;
+    gap: 1em;
+    padding:0.5rem;
+}
+
+.client-testimonials .client-testimonials-container .title{
+    font-family: 'Marcellus';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: #1B76AA;
+    padding-right:1rem;
+}
+
+.client-testimonials .client-testimonials-container .title-container{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.client-testimonials .client-testimonials-container .stars-quotes-icons-container .quotes-container {
+    padding-left: 2rem;
+}
+
+.client-testimonials .client-testimonials-container .stars-quotes-icons-container .stars-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.client-testimonials .client-testimonials-container .client-comments .comments{
+    font-family: 'Mali';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    /* or 141% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: rgba(0, 0, 0, 0.97);
+    padding-top: 0.5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.client-testimonials .client-testimonials-container .client-info{
+    padding-bottom: 2rem;
+}
+.client-testimonials .client-testimonials-container .client-info .partition-line{
+    width: 30rem;
+    height: 0px;
+    border: 1px solid rgba(217, 217, 217, 0.71);
+}
+
+.client-testimonials .client-testimonials-container .client-info .client-name{
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+}
+
+section.client-testimonials {
+    padding-right: 5rem;
+}

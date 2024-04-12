@@ -1,0 +1,9 @@
+.category-book-list {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.25rem;
+    padding-top:1rem;
+    padding-left:3rem;
+    padding-right:1rem;
+    padding-bottom: 2rem;
+}
