@@ -3,6 +3,7 @@ import {cartReducer, } from "../reducers/CartReducer";
 import { ShoppingCartItem} from "../types";
 
 const initialCartState:ShoppingCartItem[] =  []
+const storageKey = 'cart';
 export const CartStore = createContext<{
     cart: ShoppingCartItem[];
     dispatch: Dispatch<any>;
@@ -20,7 +21,14 @@ interface CartProviderProps {
 
 function CartProvider ({ children } : CartProviderProps){
     // @ts-ignore
-    const [cart, dispatch]= useReducer(cartReducer,initialCartState);
+    const [cart, dispatch]= useReducer(cartReducer,initialCartState,(initialState) => {
+        try{
+            const storedCart = JSON.parse(localStorage.getItem(storageKey) || '[]');
+            return storedCart as ShoppingCartItem[] || initialState;
+        } catch (error){
+            return initialState;
+        }
+    });
 
     return (
         <CartStore.Provider value={{ cart, dispatch }}>

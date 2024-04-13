@@ -24,6 +24,7 @@ function CategoryBookList() {
                 setIsLoading(false);
             });
     }, [categoryName]);
+    localStorage.setItem('categoryName', categoryName as string)
     return (
         <>
             {isLoading ?

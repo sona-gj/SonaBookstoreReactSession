@@ -2,7 +2,7 @@ import '../assets/css/Checkout.css';
 function Checkout() {
     return (
         <div className="checkout-page">
-            Checkout Page
+            Page is under Development
         </div>
     )
 }

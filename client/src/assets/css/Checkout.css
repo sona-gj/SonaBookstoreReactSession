@@ -1,3 +1,6 @@
-checkout-page {
-    min-height: 84vh;
+.checkout-page {
+    min-height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
